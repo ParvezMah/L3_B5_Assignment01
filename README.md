@@ -11,12 +11,15 @@ value = true; // Still OK
 
 ### `unknwon`
 The `unknwon` type is like `any` but safer. You can't use it directly without checking the type.
+```
+
+
 ```ts
 let input: unknown = "Text";
 ;if(typeof input === "string") {
   console.log(input.toUpperCase()); // safe to use
 }
-
+```
 
 
 ### `never`
@@ -26,7 +29,7 @@ The `never` is used when a value should neve esist It is often used in fucntions
 ```ts
 function throwError(message: string): never{
 throw new Error(message);
-
+```
 
 ### Summery
 any - Turs off type checking
